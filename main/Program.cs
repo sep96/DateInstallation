@@ -38,7 +38,7 @@ namespace main
                 }
             }
             // Third Soulution
-            // Use Win32_Product To Show All installed Program. (BEST WAY)
+            // Use Win32_Product To Show All installed Program. (BEST WAY) Slowest way!
             ManagementObjectSearcher mos = new ManagementObjectSearcher("SELECT * FROM Win32_Product");
             foreach (ManagementObject mo in mos.Get())
             {
